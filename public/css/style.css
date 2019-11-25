@@ -1,0 +1,90 @@
+body {
+    background-color: #fff;
+    color: #a48d85 !important;
+}
+
+a {
+    color: #a48d85 !important;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: #000 !important;
+    transition: 0.5s;
+}
+
+.btn {
+    color: #fff !important;
+}
+
+.social-navbar {
+    background-color: #fbd8cc;
+}
+
+.menu-navbar {
+    min-height: 100px;
+    background-color: #fff !important;
+}
+
+.logo {
+    height: 80px;
+}
+
+.navbar-burger {
+    position: absolute;
+    right: 15px;
+}
+
+.content {
+    min-height: 150px;
+    background-color: #fff;
+}
+
+.content-img img {
+    width: 100%;
+    height: 500px;
+    padding: 50px;
+}
+
+.content-img img {
+    object-fit: cover;
+}
+
+.content-text {
+    padding: 50px;
+}
+
+footer {
+    background-color: #fbd8cc !important;
+    text-align: center;
+}
+
+.newsletter {
+    height: 45px;
+}
+
+.footerLogo {
+    height: 80px;
+}
+
+h1 {
+    border-bottom: 1px solid #fbd8cc;
+}
+
+hr {
+    background-color: #fbd8cc;
+}
+
+.service {
+    text-align: left;
+    float: left;
+}
+
+.price {
+    text-align: right;
+    float: right;
+}
+
+.decoPrice {
+    text-align: center;
+}
