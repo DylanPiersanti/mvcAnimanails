@@ -1,4 +1,4 @@
-<?php require('./utils/config.php') ?>
+<?php require_once('./utils/config.php') ?>
 <!DOCTYPE html>
 <html lang="fr">
 
