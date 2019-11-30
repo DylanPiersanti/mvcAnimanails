@@ -1,3 +1,4 @@
+<?php require('./utils/config.php') ?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -14,11 +15,11 @@
 <body>
     <nav class="navbar navbar-light navbar-expand-lg social-navbar ">
         <div class="container">
-            <a class="navbar-brand" href="tel:">Tél : 0000000000</a>
+            <a class="navbar-brand" href="tel:<?= $phone ?>">Tél : <?= $phone ?></a>
             <div class="d-flex flex-row order-2 order-lg-3">
                 <ul class="navbar-nav flex-row">
-                    <li class="nav-item"><a class="nav-link px-2" href=""><span class="fab fa-facebook-f"></span></a></li>
-                    <li class="nav-item"><a class="nav-link px-2" href=""><span class="fab fa-instagram"></span></a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="<?= $facebook ?>"><span class="fab fa-facebook-f"></span></a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="<?= $instagram ?>"><span class="fab fa-instagram"></span></a></li>
                 </ul>
             </div>
         </div>
@@ -31,7 +32,7 @@
                         <a class="nav-link" href="./">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="tarifs.php">Tarifs</a>
+                        <a class="nav-link" href="?path=tarifs">Tarifs</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Galerie</a>
@@ -39,7 +40,7 @@
                 </ul>
             </div>
             <div class="mx-auto order-0">
-                <a class="navbar-brand mx-auto" href="#"><img class="logo" src="./public/images/logo.png" /></a>
+                <a class="navbar-brand mx-auto" href="#"><img class="logo" src="<?= $logo ?>" /></a>
                 <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target=".dual-collapse2">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -74,7 +75,7 @@
                 </div>
 
                 <div class="col-md-6 mb-4">
-                    <img class="footerLogo" src="./public/images/logo.png" />
+                    <img class="footerLogo" src="<?= $logo ?>" />
                     <hr>
                     <form class="input-group" action="./" method="post">
                         <input name="newsletter" type="mail" class="form-control form-control-sm newsletter" placeholder="S'inscrire a la newsletter" aria-label="Your email" aria-describedby="basic-addon2">
