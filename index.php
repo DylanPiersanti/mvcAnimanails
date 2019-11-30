@@ -13,6 +13,10 @@ if (!isset($_GET['path']) || !$_GET['path']) {
             require('controllers/news.php');
             showActiveNews();
             break;
+        case 'gallery':
+            require('controllers/gallery.php');
+            showGallery();
+            break;
         default:
             require('views/404.php');
     }

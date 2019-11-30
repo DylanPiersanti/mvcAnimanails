@@ -37,7 +37,7 @@
                         <a class="nav-link" href="?path=tarifs">Tarifs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Galerie</a>
+                        <a class="nav-link" href="?path=gallery">Galerie</a>
                     </li>
                 </ul>
             </div>
