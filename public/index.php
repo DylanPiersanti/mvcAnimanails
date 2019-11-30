@@ -1,4 +1,6 @@
 <?php require_once('./utils/config.php') ?>
+<?php require_once('./utils/newsletter.php') ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
