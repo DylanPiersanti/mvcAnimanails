@@ -17,6 +17,9 @@ if (!isset($_GET['path']) || !$_GET['path']) {
             require('controllers/gallery.php');
             showGallery();
             break;
+        case 'about':
+            require('views/about.php');
+            break;
         default:
             require('views/404.php');
     }

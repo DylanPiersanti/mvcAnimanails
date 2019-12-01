@@ -49,3 +49,11 @@
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    function getProducts() {
+        $db = dbConnect();
+        $req = 'SELECT * FROM products';
+        $stmt = $db->prepare($req);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }

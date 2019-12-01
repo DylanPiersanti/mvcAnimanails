@@ -4,73 +4,18 @@ ob_start();
 ?>
 
 <div class="container">
-    <div class="row">
+    <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Mon portfolio</h1>
 
-        <div class="col-md-3 col-sm-4 col-xs-12 single_portfolio_text">
-            <img src="http://i.imgur.com/PUeaHfC.png" alt="" />
-            <div class="portfolio_images_overlay text-center">
-                <h6 class="clrd-font">Italian Source Mushroom</h6>
-                <p class="clrd-font product_price"> <i class="fa fa-usd clrd-font" aria-hidden="true"></i> 12</p>
-                
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-xs-12 single_portfolio_text">
-            <img src="http://i.imgur.com/uX3g4Nl.png" alt="" />
-            <div class="portfolio_images_overlay text-center">
-                <h6 class="clrd-font">Italian Source Mushroom</h6>
-                <p class="clrd-font product_price"> <i class="fa fa-usd clrd-font" aria-hidden="true"></i> 12</p>
-                
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-xs-12 single_portfolio_text">
-            <img src="http://i.imgur.com/8cOtAS9.png" alt="" />
-            <div class="portfolio_images_overlay text-center">
-                <h6 class="clrd-font">Italian Source Mushroom</h6>
-                <p class="clrd-font product_price"> <i class="fa fa-usd clrd-font" aria-hidden="true"></i> 12</p>
-                
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-xs-12 single_portfolio_text">
-            <img src="http://i.imgur.com/p7OYoBT.png" alt="" />
-            <div class="portfolio_images_overlay text-center">
-                <h6 class="clrd-font">Italian Source Mushroom</h6>
-                <p class="clrd-font product_price"> <i class="fa fa-usd clrd-font" aria-hidden="true"></i> 12</p>
-                
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-xs-12 single_portfolio_text">
-            <img src="http://i.imgur.com/uZeTibF.png" alt="" />
-            <div class="portfolio_images_overlay text-center">
-                <h6 class="clrd-font">Italian Source Mushroom</h6>
-                <p class="clrd-font product_price"> <i class="fa fa-usd clrd-font" aria-hidden="true"></i> 12</p>
-                
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-xs-12 single_portfolio_text">
-            <img src="http://i.imgur.com/ymwlLln.png" alt="" />
-            <div class="portfolio_images_overlay text-center">
-                <h6 class="clrd-font">Italian Source Mushroom</h6>
-                <p class="clrd-font product_price"> <i class="fa fa-usd clrd-font" aria-hidden="true"></i> 12</p>
-                
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-xs-12 single_portfolio_text">
-            <img src="http://i.imgur.com/PUeaHfC.png" alt="" />
-            <div class="portfolio_images_overlay text-center">
-                <h6 class="clrd-font">Italian Source Mushroom</h6>
-                <p class="clrd-font product_price"> <i class="fa fa-usd clrd-font" aria-hidden="true"></i> 12</p>
-                
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-4 col-xs-12 single_portfolio_text">
-            <img src="http://i.imgur.com/A8FRrbS.png" alt="" />
-            <div class="portfolio_images_overlay text-center">
-                <h6 class="clrd-font">Italian Source Mushroom</h6>
-                <p class="clrd-font product_price"> <i class="fa fa-usd clrd-font" aria-hidden="true"></i> 12</p>
-                
-            </div>
-        </div>
+    <hr class="mt-2 mb-5">
 
+    <div class="row text-center text-lg-left galleryImg">
+    <?php foreach ($gallery as $gallery) { ?>
+        <div class="col-lg-3 col-md-4 col-6">
+            <a href="#" class="d-block mb-4 h-100">
+                <img class="img-fluid img-thumbnail" src="<?= $gallery['img_link'] ?>" alt="">
+            </a>
+        </div>
+    <?php } ?>
     </div>
 </div>
 

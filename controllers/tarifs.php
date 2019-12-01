@@ -8,5 +8,6 @@
         $deposeTarifs = deposesTarifs();
         $decosTarifs = decosTarifs();
         $tarifsList = getAllTarifs();
+        $products = getProducts();
         require('views/tarifs.php');
     }

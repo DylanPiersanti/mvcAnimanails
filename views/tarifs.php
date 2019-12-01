@@ -83,6 +83,42 @@ ob_start();
     <hr>
 </div>
 
+<div class="container">
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                    <button class="btn btn-dark collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Les produits
+                    </button>
+                </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    <div class="container">
+                        <h1 class="font-weight-bold text-center text-lg-left mt-4 mb-0">Les produits</h1>
+
+                        <hr class="mt-2 mb-5">
+
+                        <div class="row text-center text-lg-left galleryImg">
+                            <?php foreach ($products as $products) { ?>
+                                <div class="col-lg-3 col-md-4 col-6">
+                                    <a href="#" class="d-block mb-4 h-100">
+                                        <img class="img-fluid img-thumbnail" src="<?= $products['img_link'] ?>" alt="">
+                                    </a>
+                                </div>
+                            <?php } ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+</div>
+
 <?php
 $content = ob_get_clean();
 require('public/index.php');
